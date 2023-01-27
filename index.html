@@ -1,30 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="/slick.css" />
-    <link rel="stylesheet" type="text/css" href="/normalize.css">
-    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="stylesheet" type="text/css" href="./slick.css" />
+    <link rel="stylesheet" type="text/css" href="./normalize.css">
+    <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 
 <body>
     <div class="header_container">
         <header class="header">
             <div class="logo">
-                <img src="/source/image/logo.svg" alt="Logo">
-                <a href="/index.html">Наш сад</a>
+                <img src="./source/image/logo.svg" alt="Logo">
+                <a href="./index.html">Наш сад</a>
             </div>
             <nav class="site-nav">
                 <ul>
-                    <li><a class="current" href="/index.html">Наш сад</a></li>
-                    <li><a href="/about.html">О нас</a></li>
-                    <li><a href="/contest.html">Конкурсные работы</a></li>
-                    <li><a href="/about_festival.html">О фестивале</a></li>
-                    <li><a href="/contacts.html">Контакты</a></li>
+                    <li><a class="current" href="./index.html">Наш сад</a></li>
+                    <li><a href="./about.html">О нас</a></li>
+                    <li><a href="./contest.html">Конкурсные работы</a></li>
+                    <li><a href="./about_festival.html">О фестивале</a></li>
+                    <li><a href="./contacts.html">Контакты</a></li>
                 </ul>
             </nav>
 
@@ -35,7 +35,7 @@
         <div class="hero">
             <div class="container">
                 <div class="hero_content">
-                    <h1>Старый <span class="green">сад</span> <br>на новый лад</h1>
+                    <h1>Старый <span class="greenColor">сад</span> <br>на новый лад</h1>
                     <p>Выбери свое дерево</p>
                     <a href="#0" class="hero_button">Выбрать дерево</a>
                 </div>
@@ -50,27 +50,27 @@
                     </div>
                     <div class="info_card">
                         <div class="card">
-                            <img src="/source/image/card_icon-1.svg" alt="">
+                            <img src="./source/image/card_icon-1.svg" alt="">
                             <span>Спортивная площадка</span>
                         </div>
                         <div class="card">
-                            <img src="/source/image/card_icon-2.svg" alt="">
+                            <img src="./source/image/card_icon-2.svg" alt="">
                             <span>Веломаршруты</span>
                         </div>
                         <div class="card">
-                            <img src="/source/image/card_icon-2.svg" alt="">
+                            <img src="./source/image/card_icon-2.svg" alt="">
                             <span>Кемпинг</span>
                         </div>
                         <div class="card">
-                            <img src="/source/image/card_icon-3.svg" alt="">
+                            <img src="./source/image/card_icon-3.svg" alt="">
                             <span>База отдыха, пункты проката</span>
                         </div>
                         <div class="card">
-                            <img src="/source/image/card_icon-4.svg" alt="">
+                            <img src="./source/image/card_icon-4.svg" alt="">
                             <span>Фестиваль</span>
                         </div>
                         <div class="card">
-                            <img src="/source/image/card_icon-5.svg" alt="">
+                            <img src="./source/image/card_icon-5.svg" alt="">
                             <span>Аренда палаток</span>
                         </div>
                     </div>
@@ -84,32 +84,88 @@
                     <p>Парк разделен на 2 зоны : открытую, для активного отдыха и закрытую в тени садовых деревьев.</p>
                 </div>
                 <div class="slider_section">
-                    <div class="redZone">
-                        <div class="plan_info red">
+                    <div class="radio">
+                        <input type="radio" name="content-options" value="option1" id="option1" checked>
+                        <label for="option1">Option 1</label>
+
+                        <input type="radio" name="content-options" value="option2" id="option2">
+                        <label for="option2">Option 2</label>
+
+                        <input type="radio" name="content-options" value="option3" id="option3">
+                        <label for="option3">Option 3</label>
+
+                        <input type="radio" name="content-options" value="option3" id="option4">
+                        <label for="option4">Option 4</label>
+
+                        <input type="radio" name="content-options" value="option3" id="option5">
+                        <label for="option5">Option 5</label>
+                    </div>
+                    <div class="sliderContainer" id="slider">
+
+                    </div>
+                <div class="hiden">
+                    <div class="redZone " id="redZone">
+                        <div class="plan_info redBgColor">
                             Красная зона - зона с сенсорными дорожками и ароматной комнатой с душистыми растениями.
-                            Место
-                            для тихого отдыха.
+                            Место для тихого отдыха.
                         </div>
                         <div class="info_content">
-                            
+                            <h3>ПЕРЕЧЕНЬ РАСТЕНИЙ В КРАСНОЙ ЗОНЕ</h3>
+                            <p>Психологи утверждают, что огненный цвет прекрасно служит для выделения, привлечения
+                                внимания, он указывает, на что следует посмотреть в первую очередь. Кроме того, он
+                                является символом красоты, любви, энергии.</p>
                         </div>
                     </div>
-                    <div class="plan_info orange">
-                        Красная зона - зона с сенсорными дорожками и ароматной комнатой с душистыми растениями. Место
-                        для тихого отдыха.
+                    <div class="orangeZone" id="orangeZone">
+                        <div class="plan_info orangeBgColor">
+                            Оранжево-желтая зона - смотровая площадка, где можно любоваться закатом в удобных креслах.
+                        </div>
+                        <div class="info_content">
+                            <h3>ПЕРЕЧЕНЬ РАСТЕНИЙ В ОРАНЖЕВО-ЖЕЛТОЙ ЗОНЕ</h3>
+                            <p>Во всем мире (и до недавнего времени в нашей стране) желтые цветы означают счастье,
+                                богатство, оптимизм, дружбу, гордость и интеллект.</p>
+                        </div>
                     </div>
-                    <div class="plan_info green">
-                        Красная зона - зона с сенсорными дорожками и ароматной комнатой с душистыми растениями. Место
-                        для тихого отдыха.
+                    <div class="greenZone" id="greenZone">
+                        <div class="plan_info greenBgColor">
+                            Зеленая зона - зона с качелями и лавочками, для активного отдыха.
+                        </div>
+                        <div class="info_content">
+                            <h3>ПЕРЕЧЕНЬ РАСТЕНИЙ В ЗЕЛЕНОЙ ЗОНЕ</h3>
+                            <p>Цвет самой жизни, символ природы и экологии, гармонии и равновесия. Этот цвет
+                                ассоциируется с возрождением, как весна, когда все оживает и мир, преображается. Он
+                                успокаивает нас на физическом уровне, так как
+                                именно зеленая часть спектра легче всего воспринимается глазом.</p>
+                        </div>
                     </div>
-                    <div class="plan_info blue">
-                        Красная зона - зона с сенсорными дорожками и ароматной комнатой с душистыми растениями. Место
-                        для тихого отдыха.
+                    <div class="blueZone" id="blueZone">
+                        <div class="plan_info blueBgColor">
+                            Сине-голубая зона - в ней распологпается зона тихого отдыха с фонтаном и лавочками.
+                        </div>
+                        <div class="info_content">
+                            <h3>ПЕРЕЧЕНЬ РАСТЕНИЙ В СИНЕ-ГОЛУБОЙ ЗОНЕ</h3>
+                            <p>Синий цвет обладает успокаивающим действием, умиротворяет. Он помогает человеку
+                                избавиться от агрессии, бессонницы и
+                                отрицательных мыслей. Это гармонизация энергии, рекомендуется к использованию в тех
+                                местах, где от человека ожидают
+                                повышенной активности, внимания и при этом эмоционального расслабления.</p>
+                        </div>
                     </div>
-                    <div class="plan_info violet">
-                        Красная зона - зона с сенсорными дорожками и ароматной комнатой с душистыми растениями. Место
-                        для тихого отдыха.
+                    <div class="violetZone" id="violetZone">
+                        <div class="plan_info violetBgColor">
+                            Фиолетовая зона - зона общения у костра и песен под гитару.
+                        </div>
+                        <div class="info_content">
+                            <h3>ПЕРЕЧЕНЬ РАСТЕНИЙ В ФИОЛЕТОВОЙ ЗОНЕ</h3>
+                            <p>Это как бы угасший красный — такой красный, на который набросили синий покров тьмы.
+                                Главное его свойство —
+                                двойственность воздействия на психику: он и возбуждает, и угнетает, он соединяет
+                                эмоциональный эффект красного и синего
+                                цветов: одновременно притягивающий и отталкивающий, полный жизни и возбуждающий тоску, и
+                                грусть. (С. Рубинштейн)</p>
+                        </div>
                     </div>
+                </div>
                 </div>
             </div>
             <div class="plan_image">
@@ -289,7 +345,7 @@
                 </div>
                 </div>
                 </div>-->
-    <script type="text/javascript" src="/scripts.js"></script>
+    <script type="text/javascript" src="./scripts.js"></script>
 </body>
 
 </html>

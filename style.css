@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Rubik";
+  src: url(./source/fonts/Rubik-Regular.974ab100afa4538622da.ttf);
+}
+@font-face {
+  font-family: "Nunito";
+  src: url(./source/fonts/Rubik-Regular.974ab100afa4538622da.ttf);
+}
 .container {
   width: 75%;
   margin: 0 auto;
@@ -101,13 +109,13 @@
 }
 
 .hero {
-  background-image: url(/source/image/bg_picture.svg);
+  background-image: url(./source/image/bg_picture.svg);
   background-size: cover;
   background-position: 50%;
   height: 876px;
 }
 
-.green {
+.greenColor {
   color: #0ca941;
 }
 
@@ -252,35 +260,35 @@
   display: flex;
   align-items: center;
   padding: 22px 32px;
-  color:#fff;
+  color: #fff;
   border-radius: 10px;
   font-size: 18px;
   gap: 34px;
   margin: 5px 0;
 }
 
-.red{
+.redBgColor {
   background-color: #e53f3f;
 }
 
-.orange{
+.orangeBgColor {
   background-color: #f38a2a;
 }
 
-.green{
+.greenBgColor {
   background-color: #0ca941;
 }
 
-.blue{
+.blueBgColor {
   background-color: #3fbee5;
 }
 
-.violet{
+.violetBgColor {
   background-color: #5056b5;
 }
 
 .plan_info::before {
-  content: url(/source/image/atention_before_img.svg);
+  content: url(./source/image/atention_before_img.svg);
 }
 
 .info_content {
@@ -289,6 +297,26 @@
   width: 100%;
 }
 
-.info_content::before {
-  content: url(/source/image/lineRed.svg);
+.redZone .info_content::before {
+  content: url(./source/image/lineRed.svg);
+}
+
+.orangeZone .info_content::before {
+  content: url(./source/image/lineOrange.svg);
+}
+
+.greenZone .info_content::before {
+  content: url(./source/image/lineGreen.svg);
+}
+
+.blueZone .info_content::before {
+  content: url(./source/image/lineBlue.svg);
+}
+
+.violetZone .info_content::before {
+  content: url(./source/image/lineViolet.svg);
+}
+
+.hiden {
+  display: none;
 }
