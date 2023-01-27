@@ -1,0 +1,294 @@
+.container {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 87px;
+  font-family: Rubik, sans-serif;
+  width: 75%;
+  margin: 0 auto;
+  background: #fff;
+}
+
+.logo {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 4px;
+}
+
+.logo a {
+  margin-left: 7px;
+  color: #374a3d;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+.header_container {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #fff;
+}
+
+.site-nav {
+  margin-left: auto;
+  margin-right: 2rem;
+}
+
+.site-nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  width: 100%;
+}
+
+.site-nav a {
+  text-decoration: none;
+}
+
+.site-nav li a {
+  margin-left: 1rem;
+  font-size: 18px;
+  line-height: 21px;
+  color: #374a3d;
+  font-weight: 700;
+}
+
+.site-nav li a:hover {
+  color: #0ca941;
+}
+
+.site-nav li a.current {
+  font-weight: bold;
+  color: #0ca941;
+}
+
+.button {
+  background: #0ca941;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  font-family: Rubik, sans-serif;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  height: 45px;
+  line-height: 21px;
+  width: 155px;
+  padding-top: 12px;
+}
+
+.button:hover {
+  background: #fff;
+  border: 0.5px solid #0ca941;
+  color: #0ca941;
+}
+
+.button-green {
+  background: #0ca941;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.hero {
+  background-image: url(/source/image/bg_picture.svg);
+  background-size: cover;
+  background-position: 50%;
+  height: 876px;
+}
+
+.green {
+  color: #0ca941;
+}
+
+.hero_content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-family: Nunito, sans-serif;
+}
+
+.hero_content h1 {
+  color: #374a3d;
+
+  font-size: 72px;
+  line-height: 76px;
+  margin-top: 135px;
+  margin-bottom: 80px;
+}
+
+.hero_content p {
+  color: #374a3d;
+
+  font-size: 72px;
+  line-height: 76px;
+  margin-top: 135px;
+  margin-bottom: 80px;
+}
+
+.hero_button {
+  align-items: center;
+  background: url(./source/image/Ellipse.svg);
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  font-family: Rubik, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  height: 68px;
+  justify-content: space-evenly;
+  line-height: 18px;
+  width: 234px;
+}
+
+.hero_button::after {
+  content: url(./source/image/button_chevron.svg);
+}
+
+.info_card {
+  padding: 50px 0;
+}
+
+.info_inner {
+  font-family: Poppins, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.info_text {
+  width: 50%;
+}
+
+.info_text h2 {
+  color: #0ca941;
+  font-size: 46px;
+  font-weight: 900;
+  line-height: 120%;
+}
+
+.info_text p {
+  color: #678570;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.info_card {
+  display: flex;
+  align-content: space-between;
+  width: 50%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+.card {
+  align-items: center;
+  color: #0ca941;
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  font-weight: 600;
+  height: 150px;
+  line-height: 27px;
+  text-align: center;
+  width: 170px;
+}
+
+.card span {
+  margin-top: 20px;
+}
+
+.plan {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 0 auto;
+  padding-top: 105px;
+  width: 87.5%;
+}
+
+.plan_left {
+  margin-right: 24px;
+}
+
+.plan_image {
+  width: 40%;
+  height: 10%;
+  display: block;
+}
+
+.plan_left h2 {
+  color: #0ca941;
+  font-family: Poppins, sans-serif;
+  font-size: 46px;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  line-height: 60px;
+}
+
+.plan_left p {
+  color: #374a3d;
+  font-size: 16px;
+  font-weight: 300;
+  padding-right: 100px;
+  margin-right: 24px;
+}
+
+.plan_info {
+  display: flex;
+  align-items: center;
+  padding: 22px 32px;
+  color:#fff;
+  border-radius: 10px;
+  font-size: 18px;
+  gap: 34px;
+  margin: 5px 0;
+}
+
+.red{
+  background-color: #e53f3f;
+}
+
+.orange{
+  background-color: #f38a2a;
+}
+
+.green{
+  background-color: #0ca941;
+}
+
+.blue{
+  background-color: #3fbee5;
+}
+
+.violet{
+  background-color: #5056b5;
+}
+
+.plan_info::before {
+  content: url(/source/image/atention_before_img.svg);
+}
+
+.info_content {
+  align-items: center;
+  display: flex;
+  width: 100%;
+}
+
+.info_content::before {
+  content: url(/source/image/lineRed.svg);
+}
