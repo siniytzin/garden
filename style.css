@@ -320,3 +320,7 @@
 .hiden {
   display: none;
 }
+
+.visible {
+  display: block;
+}

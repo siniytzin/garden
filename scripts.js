@@ -1,36 +1,57 @@
-const contentBlock = document.getElementById("slider");
+const myRadioButton = document.getElementById("option1");
+const redZone = document.getElementById("redZone");
+const greenZone = document.getElementById("greenZone");
+const orangeZone = document.getElementById("orangeZone");
+const blueZone = document.getElementById("blueZone");
+const violetZone = document.getElementById("violetZone");
 
-const redBlock = document.getElementById("redZone");
-const orangeBlock = document.getElementById("orangeZone");
-const greenBlock = document.getElementById("greenZone");
-const blueBlock = document.getElementById("blueZone");
-const violetBlock = document.getElementById("violetZone");
 
-
-let changeContent = (content) => {
-    contentBlock.innerHTML = content;
-}
-console.log(contentBlock)
 document.querySelectorAll("input[name='content-options']").forEach(input => {
     input.addEventListener("change", (event) => {
         if (event.target.checked) {
             switch (event.target.value) {
                 case "option1":
-                    changeContent(redBlock, console.log("Red DONE"));
+                    redZone.classList.add("visible");
+
+                    greenZone.classList.remove("visible");
+                    orangeZone.classList.remove("visible");
+                    blueZone.classList.remove("visible");
+                    violetZone.classList.remove("visible");
                     break;
                 case "option2":
-                    changeContent(orangeBlock);
+                    orangeZone.classList.add("visible");
+
+                    redZone.classList.remove("visible");
+                    greenZone.classList.remove("visible");
+                    blueZone.classList.remove("visible");
+                    violetZone.classList.remove("visible");
                     break;
                 case "option3":
-                    changeContent(greenZone);
+                    greenZone.classList.add("visible");
+
+                    redZone.classList.remove("visible");
+                    orangeZone.classList.remove("visible");
+                    blueZone.classList.remove("visible");
+                    violetZone.classList.remove("visible");
                     break;
                 case "option4":
-                    changeContent(blueZone);
+                    blueZone.classList.add("visible");
+
+                    redZone.classList.remove("visible");
+                    greenZone.classList.remove("visible");
+                    orangeZone.classList.remove("visible");
+                    violetZone.classList.remove("visible");
                     break;
                 case "option5":
-                    changeContent(violetZone);
+                    violetZone.classList.add("visible");
+
+                    redZone.classList.remove("visible");
+                    greenZone.classList.remove("visible");
+                    orangeZone.classList.remove("visible");
+                    blueZone.classList.remove("visible");
                     break;
             }
+            // redZone.classList.remove("visible")
         }
     });
 });
