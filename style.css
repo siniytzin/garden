@@ -9,7 +9,7 @@
 .container {
   width: 75%;
   margin: 0 auto;
-}
+} 
 
 .header {
   display: flex;
@@ -231,11 +231,16 @@
 
 .plan_left {
   margin-right: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  width: 100%;
 }
 
 .plan_image {
-  width: 40%;
-  height: 10%;
+  width: 100%;
+  height: 100%;
   display: block;
 }
 
@@ -287,6 +292,26 @@
   background-color: #5056b5;
 }
 
+.redBorderColor {
+  border: 3px solid #e53f3f;
+}
+
+.orangeBorderColor {
+  border: 3px solid #f38a2a;
+}
+
+.greenBorderColor {
+  border: 3px solid #0ca941;
+}
+
+.blueBorderColor {
+  border: 3px solid #3fbee5;
+}
+
+.violetBorderColor {
+  border: 3px solid #5056b5;
+}
+
 .plan_info::before {
   content: url(./source/image/atention_before_img.svg);
 }
@@ -323,4 +348,68 @@
 
 .visible {
   display: block;
+}
+
+.radio {
+  justify-content: center;
+  align-items: center;
+}
+
+.radio input {
+  display: none;
+}
+
+.radio label {
+  box-sizing: border-box;
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 34px;
+  border-radius: 8px;
+  margin-right: 24px;
+}
+
+.redCheckerColor {
+  content: url(./source/image/blockRed.svg);
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 5px;
+  left: 5px;
+}
+
+.orangeCheckerColor {
+  content: url(./source/image/blockOrange.svg);
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 5px;
+  left: 5px;
+}
+
+.greenCheckerColor {
+  content: url(./source/image/blockGreen.svg);
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 5px;
+  left: 5px;
+}
+
+.blueCheckerColor {
+  content: url(./source/image/blockBlue.svg);
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 5px;
+  left: 5px;
+}
+
+.violetCheckerColor {
+  content: url(./source/image/blockViolet.svg);
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 5px;
+  left: 5px;
 }
