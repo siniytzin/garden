@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
- 
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,339 +12,441 @@
 </head>
 
 <body>
-    <div class="header_container">
-        <header class="header">
-            <div class="logo">
-                <img src="./source/image/logo.svg" alt="Logo">
-                <a href="./index.html">Наш сад</a>
-            </div>
-            <nav class="site-nav">
-                <ul>
-                    <li><a class="current" href="./index.html">Наш сад</a></li>
-                    <li><a href="./about.html">О нас</a></li>
-                    <li><a href="./contest.html">Конкурсные работы</a></li>
-                    <li><a href="./about_festival.html">О фестивале</a></li>
-                    <li><a href="./contacts.html">Контакты</a></li>
-                </ul>
-            </nav>
-
-            <a href="#0" class="button button-green">деревья</a>
-        </header>
-    </div>
-    <main>
-        <div class="hero">
-            <div class="container">
-                <div class="hero_content">
-                    <h1>Старый <span class="greenColor">сад</span> <br>на новый лад</h1>
-                    <p>Выбери свое дерево</p>
-                    <a href="#0" class="hero_button">Выбрать дерево</a>
+    <div class="gardenContainer">
+        <div class="header_container">
+            <header class="header">
+                <div class="logo">
+                    <img src="./source/image/logo.svg" alt="Logo">
+                    <a href="./index.html">Наш сад</a>
                 </div>
-            </div>
+                <nav class="site-nav">
+                    <ul>
+                        <li><a class="current" href="./index.html">Наш сад</a></li>
+                        <li><a href="./about.html">О нас</a></li>
+                        <li><a href="./contest.html">Конкурсные работы</a></li>
+                        <li><a href="./about_festival.html">О фестивале</a></li>
+                        <li><a href="./contacts.html">Контакты</a></li>
+                    </ul>
+                </nav>
+
+                <a href="#0" class="button button-green">деревья</a>
+            </header>
         </div>
-        <div class="info">
-            <div class="container">
-                <div class="info_inner">
-                    <div class="info_text">
-                        <h2>На територии нашего сада имеются</h2>
-                        <p>Веломаршруты, кемпинг, спортивная площадка, базы отыха, фестивали, аренда палаток</p>
-                    </div>
-                    <div class="info_card">
-                        <div class="card">
-                            <img src="./source/image/card_icon-1.svg" alt="">
-                            <span>Спортивная площадка</span>
-                        </div>
-                        <div class="card">
-                            <img src="./source/image/card_icon-2.svg" alt="">
-                            <span>Веломаршруты</span>
-                        </div>
-                        <div class="card">
-                            <img src="./source/image/card_icon-2.svg" alt="">
-                            <span>Кемпинг</span>
-                        </div>
-                        <div class="card">
-                            <img src="./source/image/card_icon-3.svg" alt="">
-                            <span>База отдыха, пункты проката</span>
-                        </div>
-                        <div class="card">
-                            <img src="./source/image/card_icon-4.svg" alt="">
-                            <span>Фестиваль</span>
-                        </div>
-                        <div class="card">
-                            <img src="./source/image/card_icon-5.svg" alt="">
-                            <span>Аренда палаток</span>
-                        </div>
+        <main>
+            <div class="hero">
+                <div class="container">
+                    <div class="hero_content">
+                        <h1>Старый <span class="greenColor">сад</span> <br>на новый лад</h1>
+                        <p>Выбери свое дерево</p>
+                        <a href="#0" class="hero_button">Выбрать дерево</a>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="plan">
-            <div class="plan_left">
-                <div class="plan_header">
-                    <h2>План сада</h2>
-                    <p>Парк разделен на 2 зоны : открытую, для активного отдыха и закрытую в тени садовых деревьев.</p>
-                </div>
-                <div class="slider_section">
-                    <div class="radio">
-                        <input type="radio" name="content-options" value="option1" id="option1" checked>
-                        <label class="redBorderColor" for="option1"><div class="redCheckerColor hiden visible"id="redCheckerColor"></div></label>
-
-                        <input type="radio" name="content-options" value="option2" id="option2">
-                        <label class="orangeBorderColor" for="option2"><div class="orangeCheckerColor hiden" id="orangeCheckerColor"></div></label>
-
-                        <input type="radio" name="content-options" value="option3" id="option3">
-                        <label class="greenBorderColor" for="option3"><div class="greenCheckerColor hiden" id="greenCheckerColor"></div></label>
-
-                        <input type="radio" name="content-options" value="option4" id="option4">
-                        <label class="blueBorderColor" for="option4"><div class="blueCheckerColor hiden" id="blueCheckerColor"></div></label>
-
-                        <input type="radio" name="content-options" value="option5" id="option5">
-                        <label class="violetBorderColor" for="option5"><div class="violetCheckerColor hiden" id="violetCheckerColor"></div></label>
-                    </div>
-                    <div class="sliderContainer" id="sider">
-
-                    </div>
-                <div class="slider" id="slider">
-                    <div class="redZone hiden visible" id="redZone">
-                        <div class="plan_info redBgColor">
-                            Красная зона - зона с сенсорными дорожками и ароматной комнатой с душистыми растениями.
-                            Место для тихого отдыха.
+            <div class="info">
+                <div class="container">
+                    <div class="info_inner">
+                        <div class="info_text">
+                            <h2>На територии нашего сада имеются</h2>
+                            <p>Веломаршруты, кемпинг, спортивная площадка, базы отыха, фестивали, аренда палаток</p>
                         </div>
-                        <div class="info_content">
-                            <h3>ПЕРЕЧЕНЬ РАСТЕНИЙ В КРАСНОЙ ЗОНЕ</h3>
-                            <p>Психологи утверждают, что огненный цвет прекрасно служит для выделения, привлечения
-                                внимания, он указывает, на что следует посмотреть в первую очередь. Кроме того, он
-                                является символом красоты, любви, энергии.</p>
-                        </div>
-                    </div>
-                    <div class="orangeZone hiden" id="orangeZone">
-                        <div class="plan_info orangeBgColor">
-                            Оранжево-желтая зона - смотровая площадка, где можно любоваться закатом в удобных креслах.
-                        </div>
-                        <div class="info_content hiden">
-                            <h3>ПЕРЕЧЕНЬ РАСТЕНИЙ В ОРАНЖЕВО-ЖЕЛТОЙ ЗОНЕ</h3>
-                            <p>Во всем мире (и до недавнего времени в нашей стране) желтые цветы означают счастье,
-                                богатство, оптимизм, дружбу, гордость и интеллект.</p>
-                        </div>
-                    </div>
-                    <div class="greenZone hiden" id="greenZone">
-                        <div class="plan_info greenBgColor">
-                            Зеленая зона - зона с качелями и лавочками, для активного отдыха.
-                        </div>
-                        <div class="info_content">
-                            <h3>ПЕРЕЧЕНЬ РАСТЕНИЙ В ЗЕЛЕНОЙ ЗОНЕ</h3>
-                            <p>Цвет самой жизни, символ природы и экологии, гармонии и равновесия. Этот цвет
-                                ассоциируется с возрождением, как весна, когда все оживает и мир, преображается. Он
-                                успокаивает нас на физическом уровне, так как
-                                именно зеленая часть спектра легче всего воспринимается глазом.</p>
-                        </div>
-                    </div>
-                    <div class="blueZone hiden" id="blueZone">
-                        <div class="plan_info blueBgColor">
-                            Сине-голубая зона - в ней распологпается зона тихого отдыха с фонтаном и лавочками.
-                        </div>
-                        <div class="info_content">
-                            <h3>ПЕРЕЧЕНЬ РАСТЕНИЙ В СИНЕ-ГОЛУБОЙ ЗОНЕ</h3>
-                            <p>Синий цвет обладает успокаивающим действием, умиротворяет. Он помогает человеку
-                                избавиться от агрессии, бессонницы и
-                                отрицательных мыслей. Это гармонизация энергии, рекомендуется к использованию в тех
-                                местах, где от человека ожидают
-                                повышенной активности, внимания и при этом эмоционального расслабления.</p>
-                        </div>
-                    </div>
-                    <div class="violetZone hiden" id="violetZone">
-                        <div class="plan_info violetBgColor">
-                            Фиолетовая зона - зона общения у костра и песен под гитару.
-                        </div>
-                        <div class="info_content">
-                            <h3>ПЕРЕЧЕНЬ РАСТЕНИЙ В ФИОЛЕТОВОЙ ЗОНЕ</h3>
-                            <p>Это как бы угасший красный — такой красный, на который набросили синий покров тьмы.
-                                Главное его свойство —
-                                двойственность воздействия на психику: он и возбуждает, и угнетает, он соединяет
-                                эмоциональный эффект красного и синего
-                                цветов: одновременно притягивающий и отталкивающий, полный жизни и возбуждающий тоску, и
-                                грусть. (С. Рубинштейн)</p>
-                        </div>
-                    </div>
-                </div>
-                </div>
-            </div>
-            <div class="plan_image">
-                <img src="./source/image/plan_color_zone.svg" alt="">
-            </div>
-        </div>
-
-        </div>
-        <div class="change_plant">
-            <div class="plant_header">
-                <h2>Выберите растение</h2>
-                <p>Растения зеленой зоны: крыжовник.</p>
-            </div>
-        </div>
-        </div>
-    </main>
-
-    <!--
-        <div class="Main_main__mRina">
-            <div class="Picture_picture__eef+W">
-                <div class="Picture_content__mykj0">
-                    <div class="Picture_text1__w5pUh">
-                        Старый 
-                        <div>
-                            сад
-                        </div>
-                         <br> на новый лад
-                    </div>
-                        <div class="Picture_text2__ZkgnB">
-                            Выбери свое дерево
-                        </div>
-                    <button type="button" class="Picture_button__CwoJ2">Выбрать дерево
-                        <img src="/static/media/Group33553.59bbc16bfecce53e4d5103ba354725cc.svg" alt="">
-                    </button>
-                </div>
-            </div>
-            <div class="Info_infoContainer__Y1Dwj">
-                <div class="Info_info__fOOgl">
-                    <div class="Text_header__jp44N">
-                        <div class="Text_title__e67bq">
-                            На территории нашего сада имеются
-                        </div>
-                        <div class="Text_text__WkJSR">
-                            Веломаршруты, кемпинг, спортивная площадка, базы отыха, фестивали,аренда палаток
-                        </div>
-                    </div>
-                            <div class="Icons_icons__h23Mx">
-                                <div class="Icon_icon__Rwtb2"><img src="/static/media/logo1.22c467ae32f1a7298f05be339a1c401d.svg"
-                                        alt="">
-                                    <div class="Icon_text__7DVMW">Спортивная площадка</div>
-                                </div>
-                                <div class="Icon_icon__Rwtb2"><img src="/static/media/logo2.de3d5e3ea0ca662b0c6f9bc86458b6f1.svg"
-                                        alt="">
-                                    <div class="Icon_text__7DVMW">Веломаршруты</div>
-                                </div>
-                                <div class="Icon_icon__Rwtb2"><img src="/static/media/logo3.de3d5e3ea0ca662b0c6f9bc86458b6f1.svg"
-                                        alt="">
-                                    <div class="Icon_text__7DVMW">Кемпинг</div>
-                                </div>
-                                <div class="Icon_icon__Rwtb2"><img src="/static/media/logo4.812aca8a2750f4bff8fd64ce05e97584.svg"
-                                        alt="">
-                                    <div class="Icon_text__7DVMW">Базы отыха, пункты проката</div>
-                                </div>
-                                <div class="Icon_icon__Rwtb2"><img src="/static/media/logo5.6d3d5d4d0cd33fb12379ec9569567950.svg"
-                                        alt="">
-                                    <div class="Icon_text__7DVMW">Фестиваль</div>
-                                </div>
-                                <div class="Icon_icon__Rwtb2"><img src="/static/media/logo6.812aca8a2750f4bff8fd64ce05e97584.svg"
-                                        alt="">
-                                    <div class="Icon_text__7DVMW">Аренда палаток</div>
-                                </div>
+                        <div class="info_card">
+                            <div class="card">
+                                <img src="./source/image/card_icon-1.svg" alt="">
+                                <span>Спортивная площадка</span>
+                            </div>
+                            <div class="card">
+                                <img src="./source/image/card_icon-2.svg" alt="">
+                                <span>Веломаршруты</span>
+                            </div>
+                            <div class="card">
+                                <img src="./source/image/card_icon-2.svg" alt="">
+                                <span>Кемпинг</span>
+                            </div>
+                            <div class="card">
+                                <img src="./source/image/card_icon-3.svg" alt="">
+                                <span>База отдыха, пункты проката</span>
+                            </div>
+                            <div class="card">
+                                <img src="./source/image/card_icon-4.svg" alt="">
+                                <span>Фестиваль</span>
+                            </div>
+                            <div class="card">
+                                <img src="./source/image/card_icon-5.svg" alt="">
+                                <span>Аренда палаток</span>
                             </div>
                         </div>
                     </div>
-                    <div id="gardenPlan" class="GardenPlan_plan__IdS3z">
-                        <div class="GardenPlan_column__sUJtb">
-                            <div
-                                style="width: 100%; display: flex; flex-direction: column; justify-content: center; margin-right: 24px; padding: 24px 0px;">
-                                <div class="GardenPlan_header__aFZD9">
-                                    <div class="GardenPlan_headerTitle__0+rwc">ПЛАН САДА</div>
-                                    <div class="GardenPlan_headerText__iYFYb">Парк разделен на 2 зоны : открытую, для активного
-                                        отдыха и закрытую в тени садовых деревьев.</div>
-                                </div>
-                                <div class="GardenPlan_buttons__Mvmqc"><span class="GardenPlan_buttons-green__pmV4e">
-                                        <div class="SuperRadio_buttons__Wr6RT"><label class="SuperRadio_button-red__LY6rP"
-                                                style="cursor: pointer;"><input type="radio" value="red"></label><label
-                                                class="SuperRadio_button-orange__M4PK7" style="cursor: pointer;"><input type="radio"
-                                                    value="orange"></label><label class="SuperRadio_button-green__7Bm2m"
-                                                style="cursor: pointer;"><input type="radio" value="green" checked=""></label><label
-                                                class="SuperRadio_button-blue__ObCbn" style="cursor: pointer;"><input type="radio"
-                                                    value="blue"></label><label class="SuperRadio_button-violet__J0fJB"
-                                                style="cursor: pointer;"><input type="radio" value="violet"></label></div>
-                                    </span>
-                                    <div class="GardenPlan_buttonsInfo-green__0io5H">Зеленая зона - зона с качелями и лавочками,
-                                        для активного отдыха.</div>
-                                </div>
-                            </div>
-                            <div class="GardenPlan_planBody-green__vs1IC">
-                                <div>
-                                    <div class="GardenPlan_planBodyTitle__fforh">ПЕРЕЧЕНЬ РАСТЕНИЙ В ЗЕЛЕНОЙ ЗОНЕ</div>
-                                    <div class="GardenPlan_planBodyText__Sv5Qj">Цвет самой жизни, символ природы и экологии,
-                                        гармонии и равновесия. Этот цвет ассоциируется с возрождением, как весна, когда все
-                                        оживает и мир, преображается. Он успокаивает нас на физическом уровне, так как именно
-                                        зеленая часть спектра легче всего воспринимается глазом.</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="GardenPlan_picture__IfA50"><img src="/static/media/planNew.adb5c79c41f501527e9528a735f3c8a7.svg"
-                                alt=""></div>
+                </div>
+            </div>
+            <div class="plan">
+                <div class="plan_left">
+                    <div class="plan_header">
+                        <h2>План сада</h2>
+                        <p>Парк разделен на 2 зоны : открытую, для активного отдыха и закрытую в тени садовых деревьев.
+                        </p>
                     </div>
-                    <div class="Cards_cards__1nkJP">
-                        <div class="HeaderBlock_header__oOGcB">
-                            <div class="HeaderBlock_title__o3KvG">Выберите растение</div>
-                            <div class="HeaderBlock_text__v4y6J">Растения зеленой зоны: крыжовник.</div>
-                        </div><span>Нажмите на картинку растения, чтобы узнать о нем подробнее.</span>
-                        <div class="Cards_card__kW9Hv">
-                            <div class="Card_card__573mm">
-                                <div></div>
-                                <div class="Card_box__gxwrD">
-                                    <div class="Card_img__KMWRJ"
-                                        style="background-image: url(&quot;/static/media/крыжовник.c2f8782fb72be62a74f2.jpg&quot;);">
+                    <div class="slider_section">
+                        <div class="radio">
+                            <input type="radio" name="content-options" value="option1" id="option1" checked>
+                            <label class="redBorderColor" for="option1">
+                                <div class="redCheckerColor hiden visible" id="redCheckerColor"></div>
+                            </label>
+
+                            <input type="radio" name="content-options" value="option2" id="option2">
+                            <label class="orangeBorderColor" for="option2">
+                                <div class="orangeCheckerColor hiden" id="orangeCheckerColor"></div>
+                            </label>
+
+                            <input type="radio" name="content-options" value="option3" id="option3">
+                            <label class="greenBorderColor" for="option3">
+                                <div class="greenCheckerColor hiden" id="greenCheckerColor"></div>
+                            </label>
+
+                            <input type="radio" name="content-options" value="option4" id="option4">
+                            <label class="blueBorderColor" for="option4">
+                                <div class="blueCheckerColor hiden" id="blueCheckerColor"></div>
+                            </label>
+
+                            <input type="radio" name="content-options" value="option5" id="option5">
+                            <label class="violetBorderColor" for="option5">
+                                <div class="violetCheckerColor hiden" id="violetCheckerColor"></div>
+                            </label>
+                        </div>
+                        <div class="slider" id="slider">
+                            <div class="redZone hiden visible" id="redZone">
+                                <div class="plan_info redBgColor">
+                                    Красная зона - зона с сенсорными дорожками и ароматной комнатой с душистыми
+                                    растениями.
+                                    Место для тихого отдыха.
+                                </div>
+                                <div class="info_content">
+                                    <div>
+                                        <div class="info_wrapper">
+                                            <h3 class="red">ПЕРЕЧЕНЬ РАСТЕНИЙ В КРАСНОЙ ЗОНЕ</h3>
+                                            <p>Психологи утверждают, что огненный цвет прекрасно служит для выделения,
+                                                привлечения
+                                                внимания, он указывает, на что следует посмотреть в первую очередь.
+                                                Кроме
+                                                того, он
+                                                является символом красоты, любви, энергии.</p>
+                                        </div>
                                     </div>
-                                    <div>Крыжовник</div><button>Выбрать</button>
+                                </div>
+                            </div>
+                            <div class="orangeZone hiden" id="orangeZone">
+                                <div class="plan_info orangeBgColor">
+                                    Оранжево-желтая зона - смотровая площадка, где можно любоваться закатом в удобных
+                                    креслах.
+                                </div>
+                                <div class="info_content">
+                                    <div>
+                                        <div class="info_wrapper">
+                                            <h3 class="orange">ПЕРЕЧЕНЬ РАСТЕНИЙ В ОРАНЖЕВО-ЖЕЛТОЙ ЗОНЕ</h3>
+                                            <p>Во всем мире (и до недавнего времени в нашей стране) желтые цветы
+                                                означают
+                                                счастье,
+                                                богатство, оптимизм, дружбу, гордость и интеллект.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="greenZone hiden" id="greenZone">
+                                <div class="plan_info greenBgColor">
+                                    Зеленая зона - зона с качелями и лавочками, для активного отдыха.
+                                </div>
+                                <div class="info_content">
+                                    <div class="info_wrapper">
+                                        <h3 class="green">ПЕРЕЧЕНЬ РАСТЕНИЙ В ЗЕЛЕНОЙ ЗОНЕ</h3>
+                                        <p>Цвет самой жизни, символ природы и экологии, гармонии и равновесия. Этот
+                                            цвет
+                                            ассоциируется с возрождением, как весна, когда все оживает и мир,
+                                            преображается. Он
+                                            успокаивает нас на физическом уровне, так как
+                                            именно зеленая часть спектра легче всего воспринимается глазом.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blueZone hiden" id="blueZone">
+                                <div class="plan_info blueBgColor">
+                                    Сине-голубая зона - в ней распологпается зона тихого отдыха с фонтаном и
+                                    лавочками.
+                                </div>
+                                <div class="info_content">
+                                    <div class="info_wrapper">
+                                        <h3 class="blue">ПЕРЕЧЕНЬ РАСТЕНИЙ В СИНЕ-ГОЛУБОЙ ЗОНЕ</h3>
+                                        <p>Синий цвет обладает успокаивающим действием, умиротворяет. Он помогает
+                                            человеку
+                                            избавиться от агрессии, бессонницы и
+                                            отрицательных мыслей. Это гармонизация энергии, рекомендуется к
+                                            использованию в тех
+                                            местах, где от человека ожидают
+                                            повышенной активности, внимания и при этом эмоционального расслабления.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="violetZone hiden" id="violetZone">
+                                <div class="plan_info violetBgColor">
+                                    Фиолетовая зона - зона общения у костра и песен под гитару.
+                                </div>
+                                <div class="info_content">
+                                    <div class="info_wrapper">
+                                        <h3 class="violet">ПЕРЕЧЕНЬ РАСТЕНИЙ В ФИОЛЕТОВОЙ ЗОНЕ</h3>
+                                        <p>Это как бы угасший красный — такой красный, на который набросили синий
+                                            покров тьмы.
+                                            Главное его свойство —
+                                            двойственность воздействия на психику: он и возбуждает, и угнетает, он
+                                            соединяет
+                                            эмоциональный эффект красного и синего
+                                            цветов: одновременно притягивающий и отталкивающий, полный жизни и
+                                            возбуждающий тоску, и
+                                            грусть. (С. Рубинштейн)</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="Gardener_gardener__J3NEa">
-                        <div class="HeaderBlock_header__oOGcB">
-                            <div class="HeaderBlock_title__o3KvG">Годовой уход за деревом</div>
-                            <div class="HeaderBlock_text__v4y6J">Саженцы, как дети, требуют внимания и ухода. Без прополки от
-                                сорняков, рыхление почвы для аэрации корней и распределения влаги, освобождение саженцев от
-                                завала листвой и заноса песком, саженцу не стать деревом.</div>
-                        </div>
-                        <div class="Window_border__ExiYr">
-                            <div></div>
-                            <div class="Window_body__Fj2yo">
-                                <div>1200₽</div>
-                                <form class="Window_form__SqqMy"><input placeholder="Ваше имя" name="name" value=""><input
-                                        placeholder="Номер вашего телефона" name="phone" value=""><input
-                                        placeholder="E-mail для обратной связи" name="email" value=""><button type="submit">Оформить
-                                        заказ</button></form>
-                                <div class="Window_text1__JUNXp">Нажимая кнопку «Оформить заказ» вы соглашаетесь с <a
-                                        href="/main">Политикой конфиденциальности</a></div>
+                </div>
+                <div class="plan_image">
+                    <img src="./source/image/plan_color_zone.svg" alt="">
+                </div>
+            </div>
+            <div class="changePlant">
+                <div class="plant_header">
+                    <h2>Выберите растение</h2>
+                    <div class="changeCardBlock">
+                        <div class="cardBlockSubheader">
+                            <div class="redZoneCard hiden visible" id="redZoneCard">
+                                <p>Растения красной зоны: малина, рябина, вишня.</p>
+                                <div class="cardInner">
+                                    <p>Нажмите на картинку растения, чтобы узнать о нем подробнее.</p>
+                                </div>
+                                <div class="redCardInner">
+                                    <div class="cardContainer">
+                                        <div class="cardPlant">
+                                            <div class="cardImage raspberry">
+
+                                            </div>
+                                            <p class="textColor">Малина</p>
+                                            <button>Выбрать</button>
+                                        </div>
+                                        <div class="cardPlant">
+                                            <div class="cardImage ashberry">
+
+                                            </div>
+                                            <p class="textColor">Рябина</p>
+                                            <button>Выбрать</button>
+                                        </div>
+                                        <div class="cardPlant">
+                                            <div class="cardImage cherry">
+
+                                            </div>
+                                            <p class="textColor">Вишня</p>
+                                            <button>Выбрать</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="Window_additional__jPTsi">
-                                <div style="width: 100%;">Саженцы/семена растений покупаются за счет средств президентского
-                                    фонда культурных инициатив</div>
-                                <div class="Window_text2__Jv42D">Вы оплачиваете латунную табличку, на которой будет написана
-                                    информация о растении и о Вас, как владельца посадки, а так же годовой уход за вашим
-                                    растением, что составляет 1200 рублей.</div>
+                            <div class="orangeZoneCard hiden" id="orangeZoneCard">
+                                <p>Растения оранжево-желтой зоны: яблоня, липа, жасмин, черемуха.</p>
+                                <div class="cardInner">
+                                    <p>Нажмите на картинку растения, чтобы узнать о нем подробнее.</p>
+                                </div>
+                                <div class="orangeCardInner">
+                                    <div class="cardContainer">
+                                        <div class="cardPlant">
+                                            <div class="cardImage apple">
+
+                                            </div>
+                                            <p class="textColor">яблоня</p>
+                                            <button>Выбрать</button>
+                                        </div>
+                                        <div class="cardPlant">
+                                            <div class="cardImage linden">
+
+                                            </div>
+                                            <p class="textColor">Липа</p>
+                                            <button>Выбрать</button>
+                                        </div>
+                                        <div class="cardPlant">
+                                            <div class="cardImage jasmine">
+
+                                            </div>
+                                            <p class="textColor">Жасмин</p>
+                                            <button>Выбрать</button>
+                                        </div>
+                                        <div class="cardPlant">
+                                            <div class="cardImage birdCherry">
+                                        
+                                            </div>
+                                            <p class="textColor">Черемуха</p>
+                                            <button>Выбрать</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="Gallery_gallery__Mq7W-"><iframe width="100%" height="519" src="" title="YouTube video player"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen="" style="border-radius: 28px;"></iframe>
-                        <div class="Gallery_pictures__3rZXh">
-                            <div class="Gallery_picture__SKTQM"><img src="" alt=""></div>
-                        </div>
-                    </div>
-        </div>
-                <div class="Footer_background__TxdX+">
-                    <div class="Footer_footer__2vCrp">
-                        <div class="Footer_documents__VyyMx">Документы<a class="Footer_documents_link__SFncQ" href="/Топосъемка.pdf"
-                                download="" target="_blank">Топосъемка места</a><a class="Footer_documents_link__SFncQ"
-                                href="/Положение.docx" download="" target="_blank">Приложение</a><a class="Footer_documents_link__SFncQ"
-                                href="/TZ.docx" download="" target="_blank">ТЗ</a></div>
-                        <div class="Footer_contacts__LVIOV"><a class="" href="#/contacts">Контакты</a>
-                            <p><b>Адрес:</b> Воронежская область, Рамонский район, пос. Горожанка</p>
-                            <p><b>Почта:</b> h.stepnoi@yandex.ru</p>
-                            <p><b>Телефон:</b> 8-910-348-28-09</p>
-                            <p><b>Социальные сети:</b> <a href="https://vk.com/chistya_tropa" target="blank">vk.com</a></p>
+                            <div class="greenZoneCard hiden" id="greenZoneCard">
+                                <p>Растения зеленой зоны: крыжовник.</p>
+                                <div class="cardInner">
+                                    <p>Нажмите на картинку растения, чтобы узнать о нем подробнее.</p>
+                                </div>
+                                <div class="greenCardInner">
+                                    <div class="cardContainer">
+                                        <div class="cardPlant">
+                                            <div class="cardImage gooseberry">
+                                            </div>
+                                            <p class="textColor">Крыжовник</p>
+                                            <button>Выбрать</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blueZoneCard hiden" id="blueZoneCard">
+                                <p>Растения сине-голубой зоны: шелковица, лен.</p>
+                                <div class="cardInner">
+                                    <p>Нажмите на картинку растения, чтобы узнать о нем подробнее.</p>
+                                </div>
+                                <div class="blueCardInner">
+                                    <div class="cardContainer">
+                                        <div class="cardPlant">
+                                            <div class="cardImage mulberry">
+                                            </div>
+                                            <p class="textColor">Шелковица</p>
+                                            <button>Выбрать</button>
+                                        </div>
+                                        <div class="cardPlant">
+                                            <div class="cardImage flax">
+
+                                            </div>
+                                            <p class="textColor">Лён</p>
+                                            <button>Выбрать</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="violetZoneCard hiden" id="violetZoneCard">
+                                <p>Растения фиолетовой зоны: слива, кровохлебка, тимьян, жимолость, шалфей.</p>
+                                <div class="cardInner">
+                                    <p>Нажмите на картинку растения, чтобы узнать о нем подробнее.</p>
+                                </div>
+                                <div class="violetCardInner">
+                                    <div class="cardContainer">
+                                        <div class="cardPlant">
+                                            <div class="cardImage cherry2">
+                                
+                                            </div>
+                                            <p class="textColor">Слива</p>
+                                            <button>Выбрать</button>
+                                        </div>
+                                        <div class="cardPlant">
+                                            <div class="cardImage burnet">
+                                        
+                                            </div>
+                                            <p class="textColor">Кровохлебка</p>
+                                            <button>Выбрать</button>
+                                        </div>
+                                        <div class="cardPlant">
+                                            <div class="cardImage thyme">
+                                        
+                                            </div>
+                                            <p class="textColor">Тимьян</p>
+                                            <button>Выбрать</button>
+                                        </div>
+                                        <div class="cardPlant">
+                                            <div class="cardImage honeysuckle">
+                                
+                                            </div>
+                                            <p class="textColor">Жимолость</p>
+                                            <button>Выбрать</button>
+                                        </div>
+                                        <div class="cardPlant">
+                                            <div class="cardImage sage">
+                                
+                                            </div>
+                                            <p class="textColor">Шалфей</p>
+                                            <button>Выбрать</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+            </div>
+            <div class="formSection">
+                <div class="formHeader">
+                    <h2 class="green">Годовой уход за деревом</h2>
+                    <p>Саженцы, как дети, требуют внимания и ухода. Без прополки от сорняков, рыхление почвы для аэрации
+                        корней и распределения влаги, освобождение саженцев от завала листвой и заноса песком, саженцу
+                        не
+                        стать деревом.
+                    </p>
                 </div>
-                </div>-->
+                <div class="formBlock">
+                    <div class="formWrapper">
+                        <p>1200 RUR</p>
+                        <form>
+                            <input placeholder="Ваше имя" name="name" value="">
+                            <input placeholder="Номер вашего телефона" name="phone" value="">
+                            <input placeholder="E-mail для обратной связи" name="email" value="">
+                            <button type="submit">Оформить заказ</button>
+                        </form>
+                        <div class="policy">
+                            Нажимая кнопку «Оформить заказ» вы соглашаетесь с
+                            <a href="/main"> Политикой конфиденциальности</a>
+                        </div>
+                    </div>
+                    <div class="formDescription">
+                        <p class="title">Саженцы/семена растений покупаются за счет средств президентского фонда
+                            культурных
+                            инициатив</p>
+                        <p class="subtitle">Вы оплачиваете латунную табличку, на которой будет написана информация о
+                            растении и о Вас, как владельца посадки, а так
+                            же годовой уход за вашим растением, что составляет 1200 рублей.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallerySection">
+                <iframe width: 100%; height: 519px; border-top-width: 0px; border-right-width: 0px; border-bottom-width:
+                    0px; border-left-width: 0px; src="" frameborder="0">
+                </iframe>
+                <div class="galleryPictures">
+                    <div class="galleryPicture"><img src="" alt=""></div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="footerInner">
+                    <div class="footerDocs">
+                        Документы
+                        <a class="footerDoc" href="/Топосъемка.pdf" download="" target="_blank">
+                            Топосъемка места
+                        </a>
+                        <a class="footerDoc" href="/Положение.docx" download="" target="_blank">
+                            Приложение
+                        </a>
+                        <a class="footerDoc" href="/TZ.docx" download="" target="_blank">
+                            ТЗ
+                        </a>
+                    </div>
+                    <div class="footerContacts">
+                        <a class="" href="#/contacts">
+                            Контакты
+                        </a>
+                        <p><b>Адрес:</b> Воронежская область, Рамонский район, пос. Горожанка</p>
+                        <p><b>Почта:</b> h.stepnoi@yandex.ru</p>
+                        <p><b>Телефон:</b> 8-910-348-28-09</p>
+                        <p><b>Социальные сети:</b>
+                        <p><a href="https://vk.com/chistya_tropa" target="blank">
+                                vk.com
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
     <script type="text/javascript" src="./scripts.js"></script>
 </body>
 
