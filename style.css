@@ -28,82 +28,6 @@ dd {
   margin: 0 auto;
 }
 
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 125px;
-  font-family: Rubik, sans-serif;
-  width: 75%;
-  margin: 0 auto;
-  background: #fff;
-}
-
-.header::after {
-  bottom: 97.84%;
-  content: url(./source/image/flower.svg);
-  left: 1%;
-  position: fixed;
-  right: 89.55%;
-  top: 0;
-}
-
-.logo {
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 4px;
-}
-
-.logo a {
-  margin-left: 7px;
-  color: #374a3d;
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 100%;
-}
-
-.header_container {
-  position: sticky;
-  top: 0;
-  z-index: 1;
-  background-color: #fff;
-}
-
-.site-nav {
-  margin-left: auto;
-  margin-right: 2rem;
-}
-
-.site-nav ul {
-  display: flex;
-  justify-content: space-evenly;
-  list-style: none;
-  width: 100%;
-}
-
-.site-nav a {
-  text-decoration: none;
-}
-
-.site-nav li a {
-  margin-left: 1rem;
-  font-size: 18px;
-  line-height: 21px;
-  color: #374a3d;
-  font-weight: 700;
-}
-
-.site-nav li a:hover {
-  color: #0ca941;
-}
-
-.site-nav li a.current {
-  font-weight: bold;
-  color: #0ca941;
-}
-
 .button {
   background: #0ca941;
   border: none;
@@ -391,6 +315,15 @@ dd {
   letter-spacing: 0.05em;
   line-height: 140%;
   padding: 20px 50px 20px 20px;
+}
+
+.info_wrapper p {
+  color: #402b2b;
+  font-family: Rubik, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 160%;
+  padding: 20px;
 }
 
 .redZone .info_content::before {
@@ -795,6 +728,7 @@ dd {
   font-weight: 200;
   line-height: 36px;
   text-decoration: none;
+  color: #000;
 }
 
 .footerContacts {
@@ -802,6 +736,8 @@ dd {
   flex-direction: column;
   justify-content: space-between;
   padding: 30px;
+  
+    font-family: Rubik,sans-serif;
 }
 
 body {
@@ -830,4 +766,32 @@ body:after {
   position: absolute;
   width: 100%;
   z-index: -50;
+}
+
+.gallerySection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 75%;
+  margin: 50px auto;
+}
+
+@media screen and (max-width: 1300px) {
+  .plan {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .redZone {
+    flex-direction: row;
+  }
+  .plan_info {
+    height: 50%;
+    align-items: center;
+    padding: 22px 32px;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 18px;
+    gap: 34px;
+    margin: 5px 24px 5px 0;
+  }
 }

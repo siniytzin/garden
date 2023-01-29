@@ -6,31 +6,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="./slick.css" />
     <link rel="stylesheet" type="text/css" href="./normalize.css">
     <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="./header.css" />
+
 </head>
 
 <body>
     <div class="gardenContainer">
-        <div class="header_container">
-            <header class="header">
-                <div class="logo">
+        <div class="navigation">
+            <div class="nav-container">
+                <div class="brand">
                     <img src="./source/image/logo.svg" alt="Logo">
                     <a href="./index.html">Наш сад</a>
                 </div>
-                <nav class="site-nav">
-                    <ul>
-                        <li><a class="current" href="./index.html">Наш сад</a></li>
-                        <li><a href="./about.html">О нас</a></li>
-                        <li><a href="./contest.html">Конкурсные работы</a></li>
-                        <li><a href="./about_festival.html">О фестивале</a></li>
-                        <li><a href="./contacts.html">Контакты</a></li>
+                <nav>
+                    <div class="nav-mobile"><a id="nav-toggle" href="#!" class="button button-green">меню</a></div>
+                    <ul class="nav-list">
+                        <li>
+                            <a class="current" href="./index.html">Наш сад</a>
+                        </li>
+                        <li>
+                            <a href="#!">Конкурсные работы</a>
+                        </li>
+                        <li>
+                            <a href="#!">О фестивале</a>
+                        </li>
+                        <li>
+                            <a href="#!">Контакты</a>
+                        </li>
+                        <li>
+                            <a href="#0" class="button button-green">деревья</a>
+                        </li>
                     </ul>
                 </nav>
-
-                <a href="#0" class="button button-green">деревья</a>
-            </header>
+            </div>
         </div>
         <main>
             <div class="hero">
@@ -278,7 +288,7 @@
                                         </div>
                                         <div class="cardPlant">
                                             <div class="cardImage birdCherry">
-                                        
+
                                             </div>
                                             <p class="textColor">Черемуха</p>
                                             <button>Выбрать</button>
@@ -334,35 +344,35 @@
                                     <div class="cardContainer">
                                         <div class="cardPlant">
                                             <div class="cardImage cherry2">
-                                
+
                                             </div>
                                             <p class="textColor">Слива</p>
                                             <button>Выбрать</button>
                                         </div>
                                         <div class="cardPlant">
                                             <div class="cardImage burnet">
-                                        
+
                                             </div>
                                             <p class="textColor">Кровохлебка</p>
                                             <button>Выбрать</button>
                                         </div>
                                         <div class="cardPlant">
                                             <div class="cardImage thyme">
-                                        
+
                                             </div>
                                             <p class="textColor">Тимьян</p>
                                             <button>Выбрать</button>
                                         </div>
                                         <div class="cardPlant">
                                             <div class="cardImage honeysuckle">
-                                
+
                                             </div>
                                             <p class="textColor">Жимолость</p>
                                             <button>Выбрать</button>
                                         </div>
                                         <div class="cardPlant">
                                             <div class="cardImage sage">
-                                
+
                                             </div>
                                             <p class="textColor">Шалфей</p>
                                             <button>Выбрать</button>
@@ -409,9 +419,8 @@
                 </div>
             </div>
             <div class="gallerySection">
-                <iframe width: 100%; height: 519px; border-top-width: 0px; border-right-width: 0px; border-bottom-width:
-                    0px; border-left-width: 0px; src="" frameborder="0">
-                </iframe>
+                <div class="youTobePlayer" id="player">
+                </div>
                 <div class="galleryPictures">
                     <div class="galleryPicture"><img src="" alt=""></div>
                 </div>
@@ -437,17 +446,17 @@
                         <p><b>Адрес:</b> Воронежская область, Рамонский район, пос. Горожанка</p>
                         <p><b>Почта:</b> h.stepnoi@yandex.ru</p>
                         <p><b>Телефон:</b> 8-910-348-28-09</p>
-                        <p><b>Социальные сети:</b>
-                        <p><a href="https://vk.com/chistya_tropa" target="blank">
+                        <p><b>Социальные сети:</b><a href="https://vk.com/chistya_tropa" target="blank">
                                 vk.com
-                            </a>
-                        </p>
+                            </a></p>
                     </div>
                 </div>
             </div>
         </main>
     </div>
     <script type="text/javascript" src="./scripts.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="./header.js"></script>
 </body>
 
 </html>
