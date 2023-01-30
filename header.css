@@ -94,7 +94,9 @@ nav ul li ul li a {
     padding: 15px;
     line-height: 20px;
 }
-
+.nav-list {
+    border-radius: 0 0 0 6px;
+}
 .nav-list li .button {
     background: #0ca941;
     border: 0.5px solid #0ca941;
@@ -109,6 +111,7 @@ nav ul li ul li a {
     line-height: 21px;
     width: 155px;
     padding-top: 12px;
+    margin-bottom: 12px;
 }
 
 .nav-list li .button:hover {
@@ -155,8 +158,8 @@ nav ul li ul li a {
     .nav-dropdown {
         position: static;
     }
-        .nav-container {
-        margin: 0 0 0 auto;
+    .nav-container {
+        margin: 0 0 0 13%;
         width: 80%;
         display: flex;
         justify-content: space-between;
@@ -167,7 +170,6 @@ nav ul li ul li a {
         padding: 330px 0 0;
         width: 100%;
         text-align: end;
-        
     }
     nav ul li a {
         display: flex;
@@ -192,6 +194,8 @@ nav ul li ul li a {
     right: 13px;
 }
 
-@media screen and (max-width: 1520px) {
-
+@media screen and (max-width: 950px) {
+    .navigation::after {
+        display: none;
+    }
 }

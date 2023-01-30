@@ -155,7 +155,7 @@ function onYouTubeIframeAPIReady() {
     player = new YT.Player('player', {
         height: '519px',
         width: '100%',
-        videoId: 'BrSpoqBFO6w',
+        videoId: 'AMy9lDbXEK8',
         events: {
             'onReady': onPlayerReady,
             'onStateChange': onPlayerStateChange
@@ -165,7 +165,6 @@ function onYouTubeIframeAPIReady() {
 
 // The API will call this function when the video player is ready.
 function onPlayerReady(event) {
-    event.target.playVideo();
 }
 
 // The API calls this function when the player's state changes.

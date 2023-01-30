@@ -115,10 +115,6 @@ dd {
   content: url(./source/image/button_chevron.svg);
 }
 
-.info_card {
-  padding: 50px 0;
-}
-
 .info_inner {
   font-family: Poppins, sans-serif;
   display: flex;
@@ -128,7 +124,7 @@ dd {
 }
 
 .info_text {
-  width: 50%;
+  width: 40%;
 }
 
 .info_text h2 {
@@ -146,9 +142,12 @@ dd {
 }
 
 .info_card {
-  display: flex;
-  align-content: space-between;
-  width: 50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 3fr;
+  gap: 50px;
+  padding: 50px 0;
+  padding-left: 150px;
   flex-wrap: wrap;
   justify-content: space-evenly;
   flex-direction: row;
@@ -736,8 +735,8 @@ dd {
   flex-direction: column;
   justify-content: space-between;
   padding: 30px;
-  
-    font-family: Rubik,sans-serif;
+
+  font-family: Rubik, sans-serif;
 }
 
 body {
@@ -775,7 +774,11 @@ body:after {
   width: 75%;
   margin: 50px auto;
 }
-
+@media screen and (max-width: 1450px) {
+  .info_card {
+    grid-template-columns: 50% 50%;
+  }
+}
 @media screen and (max-width: 1300px) {
   .plan {
     display: flex;
@@ -793,5 +796,65 @@ body:after {
     font-size: 18px;
     gap: 34px;
     margin: 5px 24px 5px 0;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .formWrapper {
+    width: 250%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .info_inner {
+    flex-direction: column;
+  }
+  .info_text {
+    padding-top: 50px;
+    width: 90%;
+  }
+
+  .info_card {
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 0;
+  }
+
+  .formDescription .title {
+    font-size: 24px;
+  }
+  .formDescription .subtitle {
+    font-size: 18px;
+  }
+
+  .formSection {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+
+}
+
+@media screen and (max-width: 630px) {
+
+  .container {
+    margin: ;
+  }
+  .hero_content p {
+    margin-top: 0;
+  }
+  .info_inner {
+    flex-direction: column;
+  }
+  .info_text {
+    padding-top: 50px;
+    width: 90%;
+  }
+
+  .info_card {
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 0;
+  }
+
+  .formSection {
+    margin: 25px;
   }
 }
