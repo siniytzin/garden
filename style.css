@@ -4,8 +4,21 @@
 }
 @font-face {
   font-family: "Nunito";
-  src: url(./source/fonts/Rubik-Regular.974ab100afa4538622da.ttf);
+  src: url(./source/fonts/Nunito-Black.969e95ce4a719e43f654.ttf);
 }
+@font-face {
+  font-family: "Poppins";
+  src: url(./source/fonts/Poppins-SemiBold.ac8d04b620e54be9b0f0.ttf);
+}
+@font-face {
+  font-family: "PoppinsBold";
+  src: url(./source/fonts/Poppins-Bold.cdb29a5d7ccf57ff05a3.ttf);
+}
+@font-face {
+  font-family: "PoppinsSemiBild";
+  src: url(./source/fonts/Poppins-SemiBold.ac8d04b620e54be9b0f0.ttf);
+}
+
 body,
 h1,
 h2,
@@ -23,6 +36,9 @@ dd {
   margin: 0;
 }
 
+main {
+  background: linear-gradient(180deg, rgba(211, 247, 202, 0), rgba(12, 169, 65, 0.19) 91.98%);
+}
 .container {
   width: 75%;
   margin: 0 auto;
@@ -79,7 +95,7 @@ dd {
 
 .hero_content h1 {
   color: #374a3d;
-
+  font-family: Nunito, sans-serif;
   font-size: 72px;
   line-height: 76px;
   margin-top: 135px;
@@ -88,7 +104,7 @@ dd {
 
 .hero_content p {
   color: #374a3d;
-
+  font-family: Rubik, sans-serif;
   font-size: 72px;
   line-height: 76px;
   margin-top: 135px;
@@ -146,11 +162,14 @@ dd {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 3fr;
   gap: 50px;
-  padding: 50px 0;
-  padding-left: 150px;
+  margin-top: 40px;
+  margin-left: 100px;
+  padding: 50px;
   flex-wrap: wrap;
   justify-content: space-evenly;
   flex-direction: row;
+  background-color: #fff;
+  border-radius: 6px;
 }
 
 .card {
@@ -188,10 +207,15 @@ dd {
   height: 100%;
   width: 100%;
 }
+
+.plan_header {
+  margin-bottom: 64px;
+}
+
 .plan_header h2 {
   color: #0ca941;
   font-family: Poppins, sans-serif;
-  font-size: 70px;
+  font-size: 46px;
   font-weight: 900;
   letter-spacing: 0.02em;
   margin-bottom: 24px;
@@ -299,7 +323,6 @@ dd {
 
 .info_content {
   align-items: center;
-
   display: flex;
   width: 100%;
 }
@@ -429,6 +452,7 @@ dd {
   letter-spacing: 0.05em;
   line-height: 60px;
   text-align: center;
+  margin: 0 8px;
 }
 
 .cardBlockSubheader p {
@@ -474,6 +498,10 @@ dd {
   cursor: pointer;
   height: 253px;
   width: 181px;
+}
+
+.cardPlant {
+  background-color: rgb(242, 242, 242);
 }
 
 .cardPlant p {
@@ -567,7 +595,6 @@ dd {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  font-family: Poppins, sans-serif;
   justify-content: space-between;
   padding: 100px 0 46px;
 }
@@ -691,7 +718,7 @@ dd {
 }
 
 .formDescription .subtitle {
-  font-family: Nunito, sans-serif;
+  font-family: Rubik, sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 160%;
@@ -701,6 +728,7 @@ dd {
 
 .footer {
   padding: 51px 0;
+  background: linear-gradient(180deg, rgba(211, 247, 202, 0), rgba(12, 169, 65, 0.55) 91.98%);
 }
 
 .footerInner {
@@ -712,13 +740,16 @@ dd {
   line-height: 36px;
   margin: 0 auto;
   width: 75%;
+
+  height: 260px;
 }
 
 .footerDocs {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 30px;
+  padding: 0 30px;
+  color: #fff;
 }
 
 .footerDoc {
@@ -727,16 +758,28 @@ dd {
   font-weight: 200;
   line-height: 36px;
   text-decoration: none;
-  color: #000;
+  color: #fff;
 }
 
 .footerContacts {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 30px;
-
+  padding: 0 30px;
+  color: #fff;
   font-family: Rubik, sans-serif;
+}
+
+.footerContacts a {
+  color: #fff;
+}
+
+.footerContacts p {
+  font-weight: normal;
+  letter-spacing: 0.2px;
+}
+.footerContacts p b {
+  padding-right: 12px;
 }
 
 body {
@@ -749,22 +792,6 @@ body {
   top: 0;
   width: 100%;
   z-index: -60;
-}
-body:after {
-  background: linear-gradient(180deg, rgba(211, 247, 202, 0), rgba(38, 47, 41, 0.55) 91.98%);
-  top: 0;
-  content: "";
-  height: 50%;
-  position: absolute;
-  width: 100%;
-  z-index: -50;
-  background: linear-gradient(180deg, rgba(211, 247, 202, 0), rgba(12, 169, 65, 0.55) 91.98%);
-  bottom: 0;
-  content: "";
-  height: 50%;
-  position: absolute;
-  width: 100%;
-  z-index: -50;
 }
 
 .gallerySection {
@@ -797,10 +824,23 @@ body:after {
     gap: 34px;
     margin: 5px 24px 5px 0;
   }
+
+  .plan_image {
+    padding-left: 240px;
+    width: 100%;
+  }
 }
 @media screen and (max-width: 1200px) {
   .formWrapper {
     width: 250%;
+  }
+  .formDescription .title {
+    font-size: 24px;
+  }
+
+  .formDescription .subtitle {
+    font-size: 14px;
+    font-weight: normal;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -810,11 +850,27 @@ body:after {
   .info_text {
     padding-top: 50px;
     width: 90%;
+    text-align: center;
   }
 
   .info_card {
     grid-template-columns: repeat(3, 1fr);
-    padding-left: 0;
+    margin-left: 0;
+  }
+
+  .plan_header {
+    text-align: center;
+    padding-right: 0;
+  }
+
+  .plan_header p {
+    max-width: none;
+    padding-right: 0;
+  }
+
+  .radio {
+    text-align: center;
+    margin-bottom: 16px;
   }
 
   .formDescription .title {
@@ -829,17 +885,26 @@ body:after {
   }
 }
 
-@media screen and (max-width: 1000px) {
-
+@media screen and (max-width: 830px) {
+  .footer {
+    height: 600px;
+  }
 }
 
 @media screen and (max-width: 630px) {
-
-  .container {
-    margin: ;
+  .hero_content h1 {
+    font-size: 52px;
+    margin-bottom: 15px;
   }
+
   .hero_content p {
     margin-top: 0;
+
+    font-size: 32px;
+  }
+
+  .hero_button {
+    color: #374a3d;
   }
   .info_inner {
     flex-direction: column;
@@ -851,10 +916,87 @@ body:after {
 
   .info_card {
     grid-template-columns: repeat(2, 1fr);
+    margin-left: 0;
+    padding: 6px;
+    gap: 8px;
+  }
+
+  .plan_image {
     padding-left: 0;
+    width: 100%;
+  }
+
+  .formBlock {
+    flex-direction: column;
   }
 
   .formSection {
-    margin: 25px;
+    margin: 2px;
+  }
+
+  .formWrapper {
+    width: auto;
+    margin: 0 4px;
+  }
+
+  .formHeader h2 {
+    font-size: 32px;
+  }
+  .formHeader p {
+    font-size: 18px;
+    padding: 0 26px;
+  }
+
+  .formDescription .title,
+  .subtitle {
+    text-align: center;
+  }
+
+  .footerInner {
+    flex-direction: column;
+  }
+
+  .footerDocs,
+  .footerContacts {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .radio {
+    display: flex;
+  }
+
+  .brand a {
+    display: none;
+  }
+
+  .plan {
+    margin: 4px;
+    width: 100%;
+  }
+
+  .plan_left {
+    margin: 0;
+  }
+
+  .info_card {
+  grid-template-columns: 1fr;
+  }
+
+  .info_text h2 {
+    font-size: 32px;
+  }
+
+  .info_text p {
+    font-size: 14px;
+  }
+
+  .plan_header h2 {
+    font-size: 32px;
+  }
+
+  .plan_header p {
+    font-size: 14px;
   }
 }

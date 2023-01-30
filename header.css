@@ -194,8 +194,43 @@ nav ul li ul li a {
     right: 13px;
 }
 
+.nav-mobile {
+    right: 160px;
+}
+
 @media screen and (max-width: 950px) {
     .navigation::after {
         display: none;
+    }
+
+    .nav-container {
+        margin-left: 16px;
+    }
+
+    .nav-mobile {
+        right: 110px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .brand {
+        min-width: 0;
+        padding-bottom: 0;
+    }
+    .brand a {
+        display: none;
+    }
+
+    .nav-mobile {
+        margin-right: 20px;
+    }
+    .nav-mobile {
+        right: 40px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .nav-mobile {
+        right: 0;
     }
 }
